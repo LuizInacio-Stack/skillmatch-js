@@ -1,4 +1,5 @@
 // SkillMatch JS - Simulador de Compatibilidade com Vagas Front-End Júnior
+// Conceitos aplicados: classes, herança, this, callback, closure, Promise e async/await
 
 const candidato = 
 {nome: "Luiz",
