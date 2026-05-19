@@ -1,3 +1,5 @@
+// SkillMatch JS - Simulador de Compatibilidade com Vagas Front-End Júnior
+
 const candidato = 
 {nome: "Luiz",
   area: "Front-End",
