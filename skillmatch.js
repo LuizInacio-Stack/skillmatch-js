@@ -147,6 +147,9 @@ const vaga_mais_compativel = melhorVaga(candidato, vagas)
 console.log("Vaga mais compatível: " + vaga_mais_compativel.empresa + " - " + vaga_mais_compativel.cargo)
 console.log("Compatibilidade: " + compat(candidato, vaga_mais_compativel).percentual + "%")
 console.log("=======================================================================================")
+console.log()
+
+console.log("======================= CLASSES E HERANÇA =======================")
 
 class Vaga {
   constructor(empresa, cargo, requisitos, salario, modalidade) {
@@ -175,10 +178,11 @@ class VagaFrontEnd extends Vaga {
 
 const vaga1 = new VagaFrontEnd("LAB365", "Desenvolvedor Front-End Júnior", ["JavaScript", "GitHub", "Lógica de Programação"], 2800, "Remoto", "Júnior")
 
-console.log()
-console.log("======================= CLASSES E HERANÇA =======================")
 console.log(vaga1.exibirResumo())
 console.log(vaga1.exibirNivel())
+console.log()
+
+console.log("======================= CALLBACK =======================")
 
 function finalizar(nome_candidato, callback) {
   console.log("Análise finalizada!")
@@ -189,9 +193,10 @@ function ExibirMensagem(nome) {
   console.log(nome + ", revise suas habilidades faltantes e atualize o plano de estudos.")
 }
 
-console.log()
-console.log("======================= CALLBACK =======================")
 finalizar(candidato.nome, ExibirMensagem)
+console.log()
+
+console.log("======================= CLOSURE =======================")
 
 function lembrar() {
   let contador = 0
@@ -204,11 +209,12 @@ function lembrar() {
 
 const somar_contador = lembrar()
 
-console.log()
-console.log("======================= CLOSURE =======================")
 console.log("1º soma: " + somar_contador())
 console.log("2º soma: " + somar_contador())
 console.log("3º soma: " + somar_contador())
+console.log()
+
+console.log("======================= PROMISE E ASYNC/AWAIT =======================")
 
 function simulacaoDehBusca() {
   return new Promise((x) => {
@@ -219,8 +225,7 @@ function simulacaoDehBusca() {
 }
 
 async function iniciarSistema() {
-  console.log()
-  console.log("======================= PROMISE E ASYNC/AWAIT =======================")
+
   console.log("Buscando vagas...")
 
   let vagasCarregadas = await simulacaoDehBusca()
