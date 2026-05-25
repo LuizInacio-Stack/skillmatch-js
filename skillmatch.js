@@ -1,6 +1,6 @@
 // SkillMatch JS - Simulador de Compatibilidade com Vagas Front-End Júnior
 // Conceitos aplicados: classes, herança, this, callback, closure, Promise e async/await
-// Autor: Luiz | SENAI - Módulo 01
+// Autor: Luiz Inacio Nascimento | Senai 2026
 
 const candidato = 
 {nome: "Luiz",
